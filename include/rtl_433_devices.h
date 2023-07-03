@@ -279,13 +279,11 @@
  * Subset of devices that I have access to and have tested with
  */
 #  define DEVICES         \
-    DECL(acurite_986)     \
-    DECL(skylink_motion)  \
-    DECL(prologue)        \
-    DECL(philips_aj3650)  \
-    DECL(fineoffset_WH51) \
+    DECL(govee)                  \
+    DECL(govee_h5054)            \
 /* Add new personal decoders here. */
-#  define NUMOFDEVICES 5
+#  define NUMOF_OOK_DEVICES 2
+#  define NUMOF_FSK_DEVICES 0
 #endif
 
 #define DECL(name) extern r_device name;

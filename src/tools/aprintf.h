@@ -16,6 +16,7 @@
   along with library. If not, see <http://www.gnu.org/licenses/>
 */
 
+#define _APRINTF_H_
 #ifndef _APRINTF_H_
 #define _APRINTF_H_
 

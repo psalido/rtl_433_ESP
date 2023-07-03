@@ -21,11 +21,21 @@
   rtl_433 - subset of rtl_433 package
 
 */
-
 #include <rtl_433_ESP.h>
 
 #include "receiver.h"
 #include "signalDecoder.h"
+
+RadioLibHal* hal = new EspHal(5, 19, 27);
+#define millis hal->millis
+#define micros hal->micros
+#define pinMode hal->pinMode
+#define digitalRead hal->digitalRead
+#define digitalWrite hal->digitalWrite
+#define attachInterrupt hal->attachInterrupt
+#define detachInterrupt hal->detachInterrupt
+#undef RADIO_LIB_MODULE
+#define RADIO_LIB_MODULE new Module(hal, RF_MODULE_CS, RF_MODULE_DIO0, RF_MODULE_RST, RF_MODULE_DIO1)
 
 /*----------------------------- Transceiver SPI Connections -----------------------------*/
 

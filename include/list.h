@@ -32,6 +32,7 @@ void list_push(list_t *list, void *p);
 /// Adds all elements of a NULL terminated list to the end of elems, allocs or grows the list if needed and ensures the list has a terminating NULL.
 void list_push_all(list_t *list, void **p);
 
+#if 0
 /// Remove element from the list, frees element with fn.
 void list_remove(list_t *list, size_t idx, list_elem_free_fn elem_free);
 
@@ -40,5 +41,6 @@ void list_clear(list_t *list, list_elem_free_fn elem_free);
 
 /// Clear the list, free backing, does not free list itself.
 void list_free_elems(list_t *list, list_elem_free_fn elem_free);
+#endif
 
 #endif /* INCLUDE_LIST_H_ */

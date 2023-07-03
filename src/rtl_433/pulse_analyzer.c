@@ -19,6 +19,9 @@
 
 #define MAX_HIST_BINS 16
 
+#define MIN(a,b) (((a)<(b))?(a):(b))
+#define MAX(a,b) (((a)>(b))?(a):(b))
+
 /// Histogram data for single bin
 typedef struct {
     unsigned count;

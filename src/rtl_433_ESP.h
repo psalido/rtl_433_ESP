@@ -26,7 +26,7 @@
 #ifndef rtl_433_ESP_H
 #define rtl_433_ESP_H
 
-#include <Arduino.h>
+#include "esp_idf_port.h"
 
 #include <functional>
 
