@@ -17,6 +17,10 @@
 #include <string.h>
 #include <limits.h>
 
+
+#define MIN(a,b) (((a)<(b))?(a):(b))
+#define MAX(a,b) (((a)>(b))?(a):(b))
+
 #define MAX_HIST_BINS 16
 
 /// Histogram data for single bin
